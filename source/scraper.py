@@ -14,6 +14,10 @@ profileImage = htmlContent.find('img', {'alt' : 'Avatar'})['src']
 
 numberOfRepo = htmlContent.find('span', {'class' : 'Counter'})['title']
 
-print(profileImage)
-print('Number of Repositories: ' + numberOfRepo)
 
+print('')
+print('----------------------------------------------------')
+print('Profile picture link: ' + profileImage)
+print('Number of Repositories: ' + numberOfRepo)
+print('----------------------------------------------------')
+print('')
