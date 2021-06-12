@@ -4,7 +4,7 @@ This program can display the gitHub user's profile
 picture link and the number of repositories he/she has.
 ---
 
-*Libraries used: *
+*Libraries used:*
 
 1. requests
 2. bs4
@@ -12,7 +12,7 @@ picture link and the number of repositories he/she has.
 
 ## Installation commands: 
 
-Install **requests** using - **pip install requests**
-Install **bs4** using - **pip install bs4**
+- Install **requests** using - **pip install requests**
+- Install **bs4** using - **pip install bs4**
 
 
