@@ -6,9 +6,9 @@ picture link and the number of repositories he/she has.
 
 *Libraries used:*
 
-1. requests
-2. bs4
-3. pip
+1. requests.
+2. bs4.
+3. pip (package manager).
 
 ## Installation commands: 
 
