@@ -1,5 +1,5 @@
-# Web Scraper Using Python
----
+# Simple github profile info scraping Using Python
+
 This program can display the gitHub user's profile
 picture link and the number of repositories he/she has.
 ---
