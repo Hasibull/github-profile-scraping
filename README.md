@@ -1,8 +1,8 @@
 # Simple github profile info scraping Using Python
 
-This program can display the gitHub user's profile
-picture link and the number of repositories he/she has.
----
+## What include's?
+- gitHub user's profile picture
+- the number of repositories.
 
 *Libraries used:*
 
@@ -14,5 +14,3 @@ picture link and the number of repositories he/she has.
 
 - Install **requests** using - **pip install requests**
 - Install **bs4** using - **pip install bs4**
-
-
