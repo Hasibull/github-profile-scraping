@@ -1,3 +1,4 @@
+import json
 import argparse
 from scraper.github_scraper import Scraper
 
@@ -7,6 +8,8 @@ def read_usernames_from_file(filepath: str) -> list:
 
 
 def main() -> None:
+    results = []
+    scraper = Scraper()
     parser = argparse.ArgumentParser(description="Github Profile Scraper")
     parser.add_argument("-u", "--user", help="Single Github Username")
     parser.add_argument("-f", "--file", help="File containing Github Usernames")
@@ -26,7 +29,17 @@ def main() -> None:
         return
     
     for username in usernames:
-        print(username, sep=" ")
+        print(f"[+] Scraping {username}")
+        data = scraper.scrape_user(username)
+
+        if data:
+            results.append(data)
+
+    with open(args.output, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=4)
+
+    print(f"\n✅ Data saved to {args.output}")
+
 
 if __name__ == "__main__":
     main()
