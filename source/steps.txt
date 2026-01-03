@@ -1,8 +1,0 @@
-1. Install requests library.
-2. Install bs4 library.
-3. Import those libraries in code.
-4. Input userName.
-5. Format the URL.
-6. Get HTML content from the URL.
-7. Process what needed.
-8. Print outputs.
