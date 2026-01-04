@@ -1,16 +1,32 @@
-# Simple github profile info scraping Using Python
+# Simple github profile info scraper in Python
 
-## What include's?
-- gitHub user's profile picture
-- the number of repositories.
+A Python-based GitHub profile scraper using **requests** and **BeautifulSoup**.
 
-*Libraries used:*
+## ✨ Features
+- Scrape public GitHub profile data
+- Supports single or multiple usernames
+- Clean JSON output
+- No Selenium, no API usage
 
-1. requests.
-2. bs4.
-3. pip (package manager).
+## 📦 Installation
 
-## Installation commands: 
+```bash
+git clone https://github.com/Hasibull/github-profile-scraping.git
+cd github-profile-scraper
+pip install -r requirements.txt
+```
 
-- Install **requests** using - **pip install requests**
-- Install **bs4** using - **pip install bs4**
+## 🚀 Usage
+Single Username
+```python
+python main.py -u torvalds
+```
+Multiple usernames from file
+```python
+python main.py -f data/usernames.txt
+```
+Output the scraped data to specified file name
+```python
+python main.py -u octocat -o output/octocat.json
+```
+**N:B:** default path is output/Userinfo.json
